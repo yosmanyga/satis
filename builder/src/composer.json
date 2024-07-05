@@ -1,0 +1,35 @@
+{
+    "name": "yosmanyga/satis-builder",
+    "require": {
+        "php": ">=8.2",
+        "mustache/mustache": "^2.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yosmanyga\\": [
+                "src/"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yosmanyga\\Tests\\": [
+                "tests/"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://satis"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        },
+        "secure-http": false
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
